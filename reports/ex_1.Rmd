@@ -1,0 +1,30 @@
+---
+title: A simple example of report generation in R
+author: Karthik Ram
+output:
+  pdf_document:
+    toc: false
+    highlight: default
+---  
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  error = FALSE,
+  tidy = FALSE, 
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+
+# Introduction
+
+This is an example document showing you how to write rmarkdown. It's easy to include some code like so:
+
+```{r, dplyr}
+library(dplyr)
+iris %>% 
+	group_by(Species) %>% 
+	summarise(sample_sizes = n())
+```
