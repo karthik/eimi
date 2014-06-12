@@ -60,8 +60,8 @@ or packages that let you do this:
 library(rdryad)
 dryaddat <- download_url("10255/dryad.1759")
 # Get a file given the URL
-file <- dryad_getfile(dryaddat)
-dim(file)
+dataset <- dryad_getfile(dryaddat)
+dim(dataset)
 ```
 
 ## Local file operations
