@@ -53,6 +53,17 @@ mammal_data <- read.csv(mammals)
 head(mammals)
 ```
 
+or packages that let you do this:
+
+```{r, eval = FALSE}
+# install.packages("rdryad")
+library(rdryad)
+dryaddat <- download_url("10255/dryad.1759")
+# Get a file given the URL
+file <- dryad_getfile(dryaddat)
+dim(file)
+```
+
 ## Local file operations
 
 One can list files from any local source as well.
