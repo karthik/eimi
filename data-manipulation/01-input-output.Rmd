@@ -45,6 +45,14 @@ my_data <- read.csv(url, header = TRUE)
 head(my_data)
 ```
 
+Also
+
+```{r}
+mammals <- "http://inundata.org/mammals.csv"
+mammal_data <- read.csv(mammals)
+head(mammals)
+```
+
 ## Local file operations
 
 One can list files from any local source as well.
