@@ -33,4 +33,4 @@ myplot <- function(dd, my_title) {
 Then you can do `myplot(climate, "Plot of temperature anomaly")`
 
 
-6. If you got through this part without any trouble, go back to the `ggplot.pdf` document from yesterday and make a barplot of the same Anomaly data. See slide `61` of the PDF for what your output should look like. Read slides 55-60 to learn about 
+6. If you got through this part without any trouble, go back to the `ggplot.pdf` document from yesterday and make a barplot of the same Anomaly data. See slide `61` of the PDF for what your output should look like. Read slides 55-60 to learn about. Include that as a second figure in your plot.
