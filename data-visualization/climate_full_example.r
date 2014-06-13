@@ -33,3 +33,5 @@ library(RColorBrewer)
 ggplot(small_climate, aes(Year, value, color = variable)) + 
 geom_line() + 
 scale_color_manual(values = brewer.pal(3,"Set1"))
+# Run display.brewer.all()
+# and try one of the other palettes (e.g. Set2, Set3)
