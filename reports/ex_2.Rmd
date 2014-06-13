@@ -32,7 +32,7 @@ myplot <- function(input_data) {
 }
 ```
 
-Now I can easily call this as a function without writing several lines of ggplot code each time
+Now I can easily call this as a function without writing several lines of ggplot code each time. If you have problems on windows, set `dev.off()` before calling the ggplot function
 
 ```{r}
 myplot(iris)
