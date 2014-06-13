@@ -1,0 +1,39 @@
+---
+title: A simple example of report generation in R
+author: Karthik Ram
+output:
+  pdf_document:
+    toc: false
+    highlight: default
+---  
+
+# Introduction
+
+The iris dataset is a classic dataset collected by R.A. Fisher. It contains `r nrow(iris)` rows from `r length(unique(iris$Species))` unique species.
+
+```{r, warning = FALSE, message = FALSE, results = "asis"}
+library(pander)
+pandoc.table(head(iris), style = 'rmarkdown', split.tables = Inf, justify = 'left')
+```
+
+Here is a plot
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + geom_point()
+```
+
+Since I need to generate several plots for iris like datasets, I'm going to create a small function to do it.
+
+```{r}
+myplot <- function(input_data) {
+    return(ggplot(input_data, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+             geom_point())
+}
+```
+
+Now I can easily call this as a function without writing several lines of ggplot code each time
+
+```{r}
+myplot(iris)
+```
