@@ -15,6 +15,8 @@ knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE
 )
+library(pander)
+panderOptions('table.style', 'rmarkdown')
 ```
 
 
@@ -28,3 +30,9 @@ iris %>%
 	group_by(Species) %>% 
 	summarise(sample_sizes = n())
 ```
+
+```{r, table, results = 'asis'}
+pandoc.table(head(iris), style = 'rmarkdown', split.tables = Inf, justify = 'left')
+```
+
+ 
