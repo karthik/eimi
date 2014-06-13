@@ -1,0 +1,21 @@
+---
+title: Title
+author: Karthik Ram
+output:
+  pdf_document:
+    toc: false
+    highlight: default
+---  
+
+```{r, load, echo = FALSE}
+library(knitr)
+read_chunk('foo.R')
+knitr::opts_chunk$set(
+message = FALSE,
+warning = FALSE
+)
+```
+
+
+```{r gen-dat, results = 'asis'}
+```
