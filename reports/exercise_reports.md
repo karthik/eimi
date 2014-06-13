@@ -3,7 +3,7 @@
 
 1. Make a new report working through yesterday's climate example. Your report should contain a small paragraph of text describing the data, some notes on the data structure (how many rows, columns), range of temperature.
 2. Then print the plot you made.
-3. Knit the report and see if the PDF looks ok.
+3. Knit the report and see if the PDF looks ok. Play around with the document to hide code, show code but without running it, run code but don't show the results (you can use code from the past two days here).
 
 __Bonus:__
 
@@ -34,3 +34,4 @@ Then you can do `myplot(climate, "Plot of temperature anomaly")`
 
 
 6. If you got through this part without any trouble, go back to the `ggplot.pdf` document from yesterday and make a barplot of the same Anomaly data. See slide `61` of the PDF for what your output should look like. Read slides 55-60 to learn about. Include that as a second figure in your plot.
+
