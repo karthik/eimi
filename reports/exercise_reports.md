@@ -26,8 +26,8 @@ See if you can update the function so it can take a title as an option. Here is 
 ```
 myplot <- function(dd, my_title) {
     # move your code here.
-    # just print the plot at the end 
-    # just add + ggtitle(title = my_title)
+    # add + ggtitle(title = my_title)
+    # just print the plot at the end     
 }
 ```
 Then you can do `myplot(climate, "Plot of temperature anomaly")`
