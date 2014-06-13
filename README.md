@@ -11,3 +11,5 @@ Unless you know how to use version control with Git, please just click on the do
 | Generating reports in R | reports |
 
 Please note that when you replicate this setup on your computer, follow the instructions here: [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/) (look under installation) to get your Latex environment setup. Then install the newest preview release of RStudio. 
+
+Now showing the class how git works.
