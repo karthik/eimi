@@ -45,7 +45,7 @@ ls()
 
 remove objects from your current environment
 
-```{r, eval = TRUE, echo = TRUE}
+```{r, eval = FALSE, echo = TRUE}
 x <- 5
 rm(x)
 x
